@@ -42,7 +42,7 @@ echo '>> Installing Helm...'
 #helm init -c
 wget https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 
 chmod +x get-helm-3
-./get-helm-3 
+VERIFY_CHECKSUM=false ./get-helm-3 
 helm version -c
 
 echo ">> Checking out $GITHUB_PAGES_BRANCH branch from $GITHUB_PAGES_REPO"
